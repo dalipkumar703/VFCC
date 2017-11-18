@@ -2,7 +2,7 @@
 
 export default async function checkAadharSubmit(email){
   try {
-     let response = await fetch('https://8bec35b5.ngrok.io/api/aadhar-check/'+email,{
+     let response = await fetch('https://dedf90e5.ngrok.io/api/aadhar-check/'+email,{
        method:'GET'
 
      });
