@@ -57,7 +57,7 @@ render(){
         avatarSource: source
       });
       var login=store.getState();
-    uploadImage(this.state.avatarSource,login.login[0].email).then((res)=>{
+    uploadImage(this.state.avatarSource.uri,login.login[0].email).then((res)=>{
       console.log("res:",res);
       ToastAndroid.show('Image Uploaded!', ToastAndroid.SHORT);
     })

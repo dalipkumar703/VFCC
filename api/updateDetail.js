@@ -1,22 +1,21 @@
 
 export default async function uploadImage(image,email){
-var params={
-  email:email,
-  image:image
-};
-var formData=new FormData();
-for(var k in params)
-{
-  formData.append(k,params[k]);
-}
+
+  const data = new FormData();
+data.append('name', 'testName'); // you can append anyone.
+data.append('photo', {
+  uri: image,
+  type: 'image/jpeg', // or photo.type
+  name: 'testPhotoName'
+});
   try {
-     let response = await fetch('http://dedf90e5.ngrok.io/api/uploadImage',{
+     let response = await fetch('https://dedf90e5.ngrok.io/api/uploadImage',{
        method:'POST',
        headers: {
-        'Accept':"application/json",
+         'Accept':'application/json',
      'Content-Type':"multipart/form-data"
   },
-  body: formData
+  body: data
 
      });
      let responseJson = await response.json();
