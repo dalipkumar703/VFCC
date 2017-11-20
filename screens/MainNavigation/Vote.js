@@ -15,11 +15,13 @@ var options = {
 class Vote extends React.Component {
    constructor(props){
      super(props);
-     state={avatarSource:null};
+     this.state={avatarSource:null};
   //this.getImage=this.getImage.bind(this);
      var login=store.getState();
      checkAadharSubmit(login.login[0].email).then((res)=>{
        console.log("result :",res);
+       console.log("length:",res.length);
+
      });
    }
 
@@ -48,7 +50,7 @@ render(){
       console.log('User tapped custom button: ', response.customButton);
     }
     else {
-      let source = { uri: 'data:image/jpeg;base64,' + response.data };
+      let source = { uri:  response.uri };
 
       // You can also display the image using data:
       // let source = { uri: 'data:image/jpeg;base64,' + response.data };
