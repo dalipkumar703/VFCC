@@ -11,7 +11,7 @@ data.append('photo', {
 });
 console.log("data:",data);
   try {
-     let response = await fetch('https://111da85a.ngrok.io/api/uploadImage',{
+     let response = await fetch('https://df58c1a4.ngrok.io/api/uploadImage',{
        method:'POST',
        headers: {
         'Accept':"application/json",

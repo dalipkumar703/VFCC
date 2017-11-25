@@ -12,6 +12,7 @@ import {NavigationActions} from 'react-navigation';
 export default class SignUp extends React.Component {
     constructor(props){
     super(props);
+    console.log("state:",this.state);
     this.state={
       name:"",
       email:"",

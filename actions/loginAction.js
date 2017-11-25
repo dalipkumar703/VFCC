@@ -6,3 +6,10 @@ return {
   object
 }
 }
+export const aadharUploaded=string =>{
+   console.log("aadhar uploaded !!");
+  return {
+    type: "AADHAR_UPLOADED",
+    string
+  }
+}
