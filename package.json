@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "native-base": "^2.2.0",
+    "randomcolor": "^0.5.3",
     "react": "16.0.0",
     "react-native": "0.50.3",
     "react-native-elements": "^0.17.0",

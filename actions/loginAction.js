@@ -13,3 +13,10 @@ export const aadharUploaded=string =>{
     string
   }
 }
+export const savePincode=string=> {
+  console.log("save pincode");
+  return {
+    type: "SAVE_PINCODE",
+    string
+  }
+}

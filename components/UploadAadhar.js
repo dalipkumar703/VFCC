@@ -1,5 +1,4 @@
 import React from 'react';
-import checkAadharSubmit from '../api/getUserDetail';
 import {View, Image,Text,StyleSheet,Alert,ToastAndroid} from 'react-native';
 import {Button,Header,Content,Container,ActionSheet} from 'native-base';
 import ImagePicker from 'react-native-image-picker';
